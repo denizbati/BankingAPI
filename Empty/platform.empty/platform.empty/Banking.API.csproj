@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Azure.Messaging.EventHubs" Version="5.9.3" />
+    <PackageReference Include="Azure.Messaging.EventHubs.Processor" Version="5.9.3" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\platform.empty.ApiContract\platform.empty.ApiContract.csproj" />
+    <ProjectReference Include="..\platform.empty.Container\Banking.Container.csproj" />
+    <ProjectReference Include="..\platform.empty.Container\platform.empty.Container.csproj" />
+    <ProjectReference Include="..\platform.empty.Domain\platform.empty.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
